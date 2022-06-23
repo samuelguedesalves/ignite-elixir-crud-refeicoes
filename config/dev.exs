@@ -5,7 +5,7 @@ config :exmeal, Exmeal.Repo,
   username: "postgres",
   password: "postgres",
   database: "exmeal_dev",
-  hostname: "localhost",
+  hostname: System.get_env("DB_HOST", "localhost"),
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
