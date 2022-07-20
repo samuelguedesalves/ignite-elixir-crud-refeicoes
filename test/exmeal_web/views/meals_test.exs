@@ -15,12 +15,10 @@ defmodule ExmealWeb.MealsViewTest do
 
     assert %{
              meal: %{
-               meal: %Meal{
-                 calories: 20,
-                 date: ~D[2001-05-02],
-                 description: "Banana",
-                 id: _id
-               }
+               calories: 20,
+               date: ~D[2001-05-02],
+               description: "Banana",
+               id: _id
              },
              message: "Meal created!"
            } = response
